@@ -203,6 +203,8 @@ img {
     padding-bottom: 26px;
 
     position: relative;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .homepage:visited {
@@ -225,22 +227,6 @@ img {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header-mail,
 .header-phone {
     display: flex;
@@ -249,6 +235,8 @@ img {
    
     color: var(--main-text-color);
     text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -335,6 +323,8 @@ img {
 
     display: block;
     margin: auto;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -539,6 +529,9 @@ img {
     cursor: pointer;
 
     color: var(--color-items);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-media {
@@ -595,6 +588,11 @@ img {
     cursor: pointer;
    
     color: var(--color-items);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
    
 }
 
@@ -644,6 +642,10 @@ img {
     color: var(--color-text-button-filter);
     
     text-align: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -809,17 +811,23 @@ img {
     font-size: 14px;
     line-height: 1.7em;
     letter-spacing: 0.03em;
+
+    
+             
     
 }
 .contacts-footer:link {
     color: var(--color-contacts-footer);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .map-address:link {
     color: var(--color-map-address);
-
     text-shadow: 0px 4px 4px var(--color-map-address-shadow);
- 
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .map-address:visited {
@@ -883,7 +891,7 @@ img {
     opacity: 1;
 
     background-color: var(--backdrop);
-    
+     
 }
 
 .backdrop.is-hidden {
@@ -907,7 +915,7 @@ img {
                  0px 2px 1px rgba(0, 0, 0, 0.2);
     
     transform: translate(-50%, -50%);
-    
+  
 }
 
 .modal-close-button {
