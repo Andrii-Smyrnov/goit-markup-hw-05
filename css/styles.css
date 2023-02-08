@@ -702,9 +702,7 @@ img {
     height: 404px;
     border: 1px solid;
     border-color: var(--color-portfolio-card-border);
-    
-    
-
+  
 }
 
 
@@ -811,10 +809,7 @@ img {
     font-size: 14px;
     line-height: 1.7em;
     letter-spacing: 0.03em;
-
-    
-             
-    
+ 
 }
 .contacts-footer:link {
     color: var(--color-contacts-footer);
@@ -891,6 +886,8 @@ img {
     opacity: 1;
 
     background-color: var(--backdrop);
+
+    transition: opacity 400ms ease-in;
      
 }
 
@@ -898,6 +895,9 @@ img {
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
+    transition: opacity 400ms ease-in,
+                visibility 400ms ease-in;
+    
 }
 
 .modal-window {
@@ -915,7 +915,7 @@ img {
                  0px 2px 1px rgba(0, 0, 0, 0.2);
     
     transform: translate(-50%, -50%);
-  
+    
 }
 
 .modal-close-button {
